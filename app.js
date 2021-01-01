@@ -11,6 +11,9 @@ app.get("/",function(req,res){
 })
 
 
+app.get("/home",function(req,res){
+    res.render("pp");
+})
 
 app.listen(process.env.PORT||3000,process.env.IP,function(err,res){
 	if(err)
